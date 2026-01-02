@@ -136,5 +136,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import os
 # DEBUG = False
-ALLOWED_HOSTS = ['*']  # In production, restrict to your domain
+# ALLOWED_HOSTS = ['*']  # In production, restrict to your domain
+ALLOWED_HOSTS = ['djangoo.aldiresee.com', '127.0.0.1', 'localhost']
+CSRF_TRUSTED_ORIGINS = [
+    'https://djangoo.aldiresee.com',  # Your Coolify domain
+    # Add variants if needed, e.g., 'https://www.djangoo.aldiresee.com'
+]
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-secret-key-here')  # Use env vars in Coolify
