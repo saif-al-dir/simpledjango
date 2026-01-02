@@ -27,10 +27,10 @@ STATICFILES_DIRS = [
 SECRET_KEY = 'django-insecure-#dzav59f9tqe1-zx7hpd%*yg(9(60g6lz9q0*z@&ut4u@j6o0i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 # For production, set DEBUG to False
-DEBUG = False
+# DEBUG = False
 
 
 
@@ -135,6 +135,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import os
-DEBUG = False
+# DEBUG = False
 ALLOWED_HOSTS = ['*']  # In production, restrict to your domain
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-secret-key-here')  # Use env vars in Coolify
