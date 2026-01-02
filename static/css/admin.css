@@ -1,0 +1,51 @@
+/* Custom Admin Header */
+#header {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+#header a {
+    color: white !important;
+}
+
+/* Form Styling */
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row input, .form-row textarea, .form-row select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.submit-row input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-row input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Table Styling for Lists */
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results th, .results td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.results th {
+    background-color: #f8f9fa;
+}
